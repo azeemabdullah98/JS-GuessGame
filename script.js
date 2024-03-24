@@ -36,6 +36,7 @@ document.querySelector('.check').addEventListener('click', function () {
 
     document.querySelector('body').style.backgroundColor = '#60b347';
     document.querySelector('.number').style.width = '30rem';
+    document.querySelector('.left').classList.add('hidden');
 
     if (score > highscore) {
       highscore = score;
@@ -93,6 +94,7 @@ document.querySelector('.again').addEventListener('click', function () {
 
   document.querySelector('body').style.backgroundColor = '#222';
   document.querySelector('.number').style.width = '15rem';
+  document.querySelector('.left').classList.remove('hidden');
 });
 
 ///////////////////////////////////////
